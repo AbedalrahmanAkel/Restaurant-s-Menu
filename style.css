@@ -12,8 +12,9 @@
   --white: #fff;
   --grey-shade: #aaa;
   --color-orange: #fda02e;
-  --green-light-shade: #577556;
-  --bg--main: #638661de;
+  --green-light: #89ce9b;
+  --green-shade: #4b784a;
+  /* --bg--main: #638661de; */
 
 }
 html {
@@ -37,6 +38,7 @@ body {
   width: 100dvw;
   position: relative;
   background:linear-gradient(90deg, rgba(0, 0, 0,.93) 35%, rgba(255, 255,255, 0.1)), url("./images/Bg-Test.png") center/cover;
+  animation: fadeIn 1.5s ease-out;
 }
 .navbar{
   display: flex;
@@ -44,12 +46,14 @@ body {
   justify-content: center;
   width: 100%;
   height: 4rem;
-  background-color: #89ce9b;
+  background-color: var(--green-shade);
+  animation: dropDown .7s ease-out;
 }
 .hero__heading--main{
+  /* font-family: ; GO BACK TO */
   font-size: 2.5rem;
   color: #fff;
-  color: #000;
+  /* color: #000; */
 }
 .hero__textContainer{
   position: absolute;
@@ -145,7 +149,6 @@ body {
 .sectionLinks {
   font-family: young serif;
   font-size: 1.6rem;
-  /* background-color: var(--green-dark-shade); GO BACK TO */
   margin: 0 2vw;
   padding: 1.4rem 3rem;
   border-radius: 10px;
@@ -182,7 +185,7 @@ body {
   font-size: 3rem;
   border-bottom: 1px solid var(--grey-shade);
   border-radius: 10px 10px 0px 0;
-  background-color: var(--green-light-shade);
+  background-color: var(--green-shade);
 }
 .item {
   border-radius: 10px;
@@ -372,64 +375,6 @@ footer a {
   }
 }
 /*-------------------------- Keyframes -------------------------*/
-/* @keyframes scrollbarVisibility {
-  0% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: hidden;
-  }
-}
-@keyframes fadeout {
-  0% {
-    width: 100%;
-  }
-  99% {
-    width: 100%;
-    opacity: 1;
-  }
-  100% {
-    width: 0;
-    opacity: 0;
-  }
-}
-@keyframes intro {
-  0% {
-    width: 0%;
-  }
-  22% {
-    width: 100%;
-  }
-  75% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-@keyframes fadein {
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes letterJump {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */
 @keyframes ctaContainer {
   0% {
     right: -20%;
@@ -440,5 +385,21 @@ footer a {
   }
   99% {
     pointer-events: none;
+  }
+}
+@keyframes dropDown {
+  0%{
+    transform: translateY(-40px);
+  }
+  90%{
+    transform: translateY(3px);
+  }
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
