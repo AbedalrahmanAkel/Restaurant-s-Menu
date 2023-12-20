@@ -38,7 +38,7 @@ body {
   width: 100dvw;
   position: relative;
   background:linear-gradient(90deg, rgba(0, 0, 0,.93) 35%, rgba(255, 255,255, 0.1)), url("./images/Bg-Test.png") center/cover;
-  animation: fadeIn 1.5s ease-out;
+  animation: fadeIn 1s ease-out;
 }
 .navbar{
   display: flex;
@@ -167,7 +167,7 @@ body {
   border-radius: 10px;
   border-radius: 10px;
   width: 94vw;
-  min-height: 80vh;
+  min-height: 6.5rem;
   box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.3);
 }
 .sectionItems {
@@ -177,15 +177,27 @@ body {
   flex-wrap: wrap;
 }
 .sectionTitle {
+  position: relative;
   color:var(--white);
   margin-bottom: 6vh;
   padding: 1rem 3%;
+  height: 6.5rem;
   width: 100%;
   text-align: right;
   font-size: 3rem;
   border-bottom: 1px solid var(--grey-shade);
   border-radius: 10px 10px 0px 0;
   background-color: var(--green-shade);
+}
+.sectionArrow{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 55px;
+}
+.sectionArrow:hover{
+  cursor: pointer;
 }
 .item {
   border-radius: 10px;
@@ -402,4 +414,13 @@ footer a {
   100%{
     opacity: 1;
   }
+}
+.collapse{
+  max-height: 10rem;
+}
+.hidden{
+  display: none;
+}
+.rotateArrow{
+  transform: rotateX(-90deg);
 }
