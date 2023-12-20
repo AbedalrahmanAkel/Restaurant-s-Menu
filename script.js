@@ -50,17 +50,17 @@ function addProductToContainer(product, category) {
 }
 loadAndClassifyProducts();
 
-const sectionArrows = document.querySelectorAll('.sectionArrow');
+const sectionArrowsContainer = document.querySelectorAll('.sectionArrowContainer');
 
 
-sectionArrows.forEach((arrow) => {
+sectionArrowsContainer.forEach((arrow) => {
   arrow.addEventListener('click', () => {
     const itemsSection = arrow.parentElement.parentElement;
     const itemsContainer = itemsSection.querySelector('.sectionItems');
-    const arrowContainer = itemsSection.querySelector('.arrowContainer');
+    const sectionArrow = itemsSection.querySelector('.sectionArrow');
     itemsContainer.classList.toggle('hidden');
     itemsSection.classList.toggle('collapse');
-    arrowContainer.classList.toggle('rotateArrow');
+    sectionArrow.classList.toggle('rotateArrow');
     console.log(arrow)
   })
 })
