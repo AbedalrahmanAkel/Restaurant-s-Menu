@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Dancing+Script:wght@600&family=Lemonada&family=Pacifico&family=Playball&family=Raleway:wght@500&family=Roboto&family=Young+Serif&display=swap");
+
 /* Arb: Lemonada */
 /* Eng: system-ui    OR    Cormorant Garamond */
 * {
@@ -9,13 +9,12 @@
   /* font-family: Lemonada, Verdana, Geneva, Tahoma, sans-serif; */
 }
 :root {
-  --white: #fff;
+  --white: #fefefe;
   --grey-shade: #aaa;
   --color-orange: #fda02e;
   --green-light: #89ce9b;
   --green-shade: #4b784a;
   /* --bg--main: #638661de; */
-
 }
 html {
   scroll-behavior: smooth;
@@ -38,7 +37,7 @@ body {
   width: 100dvw;
   position: relative;
   background:linear-gradient(90deg, rgba(0, 0, 0,.93) 0%, rgba(255, 255,255, 0.1)), url("./images/Hero-Bg.jpg") center/cover;
-  animation: fadeIn 1s ease-out;
+  animation: fadeIn .7s ease-out;
 }
 .navbar{
   display: flex;
@@ -121,16 +120,6 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
-  }
-}
-.heroTwo__textContainer {
-  font-family: lemonada;
-  text-align: center;
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 3rem;
   }
 }
 .moreInfo * {
@@ -257,10 +246,19 @@ width: 55px;
   transform: scale(1.08);
 }
 .textContainer {
-  font-family: lemonada;
   width: 60%;
 }
-
+.item h4{
+  font-family:roboto;
+  font-style:italic;
+  font-size: 1.7rem;
+}
+.item p{
+  font-family:roboto;
+  font-style:italic;
+  font-size: 1.5rem;
+}
+/* family=Lemonada&family=Pacifico&family=Pacifico&family=Raleway:wght@500&family=Roboto&family=Young+Serif&display=swap */
 /* ---------------- Footer + Absolutes ---------------- */
 footer {
   color: #444;
@@ -316,8 +314,9 @@ footer a {
   .item:nth-child(10) {
     margin-right: 0%;
   }
-.hero__introTextContainer{
+.hero__textContainer{
   font-size:4rem ;
+  /* left: 30%; */
 }
 .ctaContainer {
   width: 5rem;
@@ -344,19 +343,12 @@ footer a {
   .sections .item {
     margin-right: 0;
   }
-  .hero__introTextContainer{
-    font-size:3.8rem;
-  }
-  .hero__introTextContainer{
+  .hero__textContainer{
     left: 50%;
     font-size:3rem;
   }
 }
 @media screen and (max-width: 670px) {
-  .hero__introTextContainer{
-    font-size:3rem ;
-    letter-spacing: .1rem;
-  }
   .hero__textContainer{
     text-align:center ;
     left: 50%;
@@ -374,9 +366,6 @@ footer a {
   .item__imageContainer {
     width: 50%;
     height: 14rem;
-  }
-  .hero__introTextContainer{
-    font-size:2.4rem ;
   }
   .hero__textContainer{
     line-height: 260%;
