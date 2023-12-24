@@ -283,7 +283,7 @@ footer a {
   height: 5.5rem;
   border-radius: 1000px;
   background-color:transparent;
-  animation: ctaContainer 1.4s cubic-bezier(0.24, 0.91, 0.29, 1.1);
+  /* animation: ctaContainer 1.4s cubic-bezier(0.24, 0.91, 0.29, 1.1); */
 }
 
 .ctaContainer:hover .ctaImage {
