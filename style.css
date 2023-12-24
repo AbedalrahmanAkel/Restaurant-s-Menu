@@ -58,17 +58,20 @@ body {
   left:30%;
   transform: translate(-50%,-50%);
   font-size: 6rem;
-  line-height:160%;
   color: #fff;
+}
+.title_cocktail{
+  line-height:140%;
 }
 .moreInfo{
   width:250px;
+  height:80px;
 }
 .location{
   position: relative;
   width: 100%;
   height: auto;
-  padding: 0 1rem;
+  padding: 3rem 2rem;
   background-color: rgba(85, 85,85,.3);
   border: solid 1px #555;
   img{
@@ -283,7 +286,7 @@ footer a {
   height: 5.5rem;
   border-radius: 1000px;
   background-color:transparent;
-  /* animation: ctaContainer 1.4s cubic-bezier(0.24, 0.91, 0.29, 1.1); */
+  animation: ctaContainer 1.4s cubic-bezier(0.24, 0.91, 0.29, 1.1);
 }
 
 .ctaContainer:hover .ctaImage {
@@ -369,9 +372,14 @@ footer a {
     height: 14rem;
   }
   .hero__textContainer{
-    line-height: 260%;
     left: 50%;
-    font-size:4rem;
+    font-size:3.8rem;
+  }
+  .location{
+    padding: 2rem 1rem;
+  }
+  .title_cocktail{
+    line-height: 240%;
   }
 }
 @media screen and (max-width: 380px) {
@@ -381,11 +389,15 @@ footer a {
   .hero__textContainer{
     top: 48%;
     left: 50%;
-    font-size:3rem;
+    font-size:4rem;
   }
+  .title_cocktail{
+    line-height: 180%;
+  }
+
 }
 /*-------------------------- Keyframes -------------------------*/
-/* @keyframes ctaContainer {
+@keyframes ctaContainer {
   0% {
     right: -20%;
     pointer-events: none;
@@ -396,7 +408,7 @@ footer a {
   99% {
     pointer-events: none;
   }
-} */
+}
 @keyframes dropDown {
   0%{
     transform: translateY(-40px);
