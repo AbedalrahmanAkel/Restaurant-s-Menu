@@ -385,8 +385,8 @@ footer a {
   }
 }
 /*-------------------------- Keyframes -------------------------*/
-@keyframes ctaContainer {
-  /* 0% {
+/* @keyframes ctaContainer {
+  0% {
     right: -20%;
     pointer-events: none;
   }
