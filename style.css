@@ -386,7 +386,7 @@ footer a {
 }
 /*-------------------------- Keyframes -------------------------*/
 @keyframes ctaContainer {
-  0% {
+  /* 0% {
     right: -20%;
     pointer-events: none;
   }
@@ -396,7 +396,7 @@ footer a {
   99% {
     pointer-events: none;
   }
-}
+} */
 @keyframes dropDown {
   0%{
     transform: translateY(-40px);
